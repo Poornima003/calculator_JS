@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>Calculator</h2>
+    <div class="container">
+        <form action="">
+            <p class="heading">Casio</p>
+
+            <input type="text" id="screen">
+            <br>
+            <input class="button number" type="button" value="7" onclick="btnClick(value)">
+            <input class="button number" type="button" value="8" onclick="btnClick(value)">
+            <input class="button number" type="button" value="9" onclick="btnClick(value)">
+            <input class="button operator" type="button" value="/" onclick="btnClick(value)">
+
+            <br>
+
+            <input class="button number" type="button" value="4" onclick="btnClick(value)">
+            <input class="button number" type="button" value="5" onclick="btnClick(value)">
+            <input class="button number" type="button" value="6" onclick="btnClick(value)">
+            <input class="button operator" type="button" value="*" onclick="btnClick(value)">
+
+            <br>
+
+            <input class="button number" type="button" value="1" onclick="btnClick(value)">
+            <input class="button number" type="button" value="2" onclick="btnClick(value)">
+            <input class="button number" type="button" value="3" onclick="btnClick(value)">
+            <input class="button operator" type="button" value="+" onclick="btnClick(value)">
+
+            <br>
+
+            <input id="clearAct" class="button" type="button" value="C" onclick="scrnclr()">
+            <input class="button number" type="button" value="0" onclick="btnClick(value)">
+            <input id="result" class="button" type="button" value="=" onclick="getResult()">
+            <input class="button operator" type="button" value="-" onclick="btnClick(value)">
+        </form>
+    </div>
+    <script src="./calc.js"></script>
+</body>
+</html>
